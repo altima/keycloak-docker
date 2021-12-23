@@ -1,4 +1,4 @@
-FROM quay.io/keycloak/keycloak
+FROM jboss/docker:16.1.0
 
 # PrivacyIDEA Provider integration
 ENV PRIVACYIDEA_PROVIDER_VERSION=1.0.0
