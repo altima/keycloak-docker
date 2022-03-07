@@ -1,7 +1,7 @@
-FROM jboss/keycloak:16.1.0
+FROM jboss/keycloak:16.1.1
 
 # PrivacyIDEA Provider integration
-ENV PRIVACYIDEA_PROVIDER_VERSION=1.0.0
+ENV PRIVACYIDEA_PROVIDER_VERSION=1.0.1
 RUN curl -L https://github.com/privacyidea/keycloak-provider/releases/download/v${PRIVACYIDEA_PROVIDER_VERSION}/PrivacyIDEA-Provider.jar --output /opt/jboss/keycloak/standalone/deployments/PrivacyIDEA-Provider.jar
 
 # Joomla UserProvider integration
